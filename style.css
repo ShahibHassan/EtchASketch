@@ -1,0 +1,18 @@
+body {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 50%;
+    height: 50%;
+}
+
