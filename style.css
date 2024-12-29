@@ -1,18 +1,26 @@
-body {
-    background-color: grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.grid{
-    border: 1px solid black;
+html, body {
+    height: 100%;
+}
+
+body {
+    background: grey;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
 }
 
 .container {
-    width: 50%;
-    height: 50%;
-}
 
+    display: flex;
+    flex-wrap: wrap;
+    height: 640px;
+    max-width: 640px;
+}
