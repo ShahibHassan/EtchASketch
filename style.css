@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    background: grey;
+    background: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,8 +27,17 @@ body {
 }
 
 .btn {
- border-radius: 5px;
- padding: 5px;
- font-size: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
 }
 
+.btns {
+    background-color: white;
+    margin-bottom: 5px;
+    padding: 5px 0;
+    width: 640px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+}

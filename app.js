@@ -43,6 +43,17 @@ function getGridSize(){
   })
 }
 
+
+function ClearGrid() {
+  const clearbtn = document.querySelector('#clearbtn')
+  clearbtn.addEventListener('click', () => {
+    const squares = document.querySelectorAll('.square');
+    squares.forEach((square) => {
+      square.style.backgroundColor = 'white';
+    }); 
+  })
+}
+
 //Randomise color
 const hexChar = [0,1,2,3,4,5,6,7,8,9,"A", "B", "C", "D", "E", "F"];
 
@@ -62,3 +73,4 @@ function generateRandomColour() {
 //default gridSize is 16x16
 createGrid(16);
 getGridSize();
+ClearGrid();
