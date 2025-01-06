@@ -25,7 +25,9 @@ function onHover() {
 
   squares.forEach((square) => {
     square.addEventListener('mouseover', () => {
-      square.style.backgroundColor = 'red';
+      if (square.style.backgroundColor === 'white'){
+        square.style.backgroundColor = generateRandomColour();
+      }
     });
   });
 }
@@ -39,6 +41,21 @@ function getGridSize(){
     }
     createGrid(Number(userInput));
   })
+}
+
+//Randomise color
+const hexChar = [0,1,2,3,4,5,6,7,8,9,"A", "B", "C", "D", "E", "F"];
+
+function getChar(index) {
+  return hexChar[index];
+}
+
+function generateRandomColour() {
+  let hexColourRep = "#";
+  for (let i = 0; i<6; i++) {
+    hexColourRep += getChar(Math.floor(Math.random() * hexChar.length));
+  }
+  return hexColourRep;
 }
 
 
